@@ -6,13 +6,13 @@ import logo from "/src/images/white-logo.gif";
   class="flex items-center justify-between flex-wrap fixed w-full z-20 top-0"
 >
   <div class="flex items-center flex-shrink-0 text-white mr-6">
-    <a href="/" class="w-12 ml-4 pt-4 lg:w-16 lg:pt-12 absolute z-20">
+    <a href="/" class="w-12 ml-4 pt-4 lg:w-16 lg:pt-8 absolute z-20">
       <img src={logo} alt="logo" /><img />
     </a>
-    <div class="absolute flex-row z-20 pt-4 pl-16 lg:pt-12 lg:pl-20">
+    <div class="absolute flex-row z-20 pt-4 pl-16 lg:pt-8 lg:pl-20">
       <a href="/">
         <h2
-          class="text-white text-lg lead lg:text-2xl font-extrabold font-sans"
+          class="text-white text-md lead lg:text-2xl font-extrabold font-sans"
         >
           R A Y M O N D R E A M E R
         </h2>
@@ -36,50 +36,35 @@ import logo from "/src/images/white-logo.gif";
   </div>
 
   <div
-    class="w-full h-screen bg-black -mt-20 z-10 lg:bg-transparent lg:m-0 lg:h-auto flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+    class="w-full h-screen bg-black/75 -mt-20 z-10 lg:bg-transparent lg:m-0 lg:h-auto flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0"
     id="nav-content"
   >
     <ul
-      class="list-reset mt-40 lg:mt-8 lg:flex justify-end flex-1 items-center justify-center"
+      class="list-reset mt-40 lg:mt-8 lg:flex flex-1 items-center justify-center text-white flex flex-col lg:flex-row"
     >
       <li class="mr-3">
         <a
-          class="inline-block text-5xl lg:text-sm font-sans font-semibold text-slate-300 hover:text-white no-underline py-2 px-4"
-          href="/">HOME</a
-        >
-      </li>
-      <li class="mr-3">
-        <a
-          class="inline-block text-5xl lg:text-sm font-sans font-semibold text-slate-300 hover:text-white no-underline py-2 px-4"
+          class="inline-block text-5xl lg:text-sm font-sans font-semibold hover:underline py-2 px-2"
           href="/blog">BLOG</a
         >
       </li>
       <li class="mr-3">
         <a
-          class="inline-block text-5xl lg:text-sm font-sans font-semibold text-slate-300 hover:text-white no-underline py-2 px-4"
+          class="inline-block text-5xl lg:text-sm font-sans font-semibold hover:underline py-2 px-2"
+          href="/projects">PROJECTS</a
+        >
+      </li>
+      <li class="mr-3">
+        <a
+          class="inline-block text-5xl lg:text-sm font-sans font-semibold hover:underline py-2 px-2"
           href="/about">ABOUT</a
         >
       </li>
-
-      <li class="mr-3">
-        <a
-          class="inline-block text-5xl lg:text-sm font-sans font-semibold text-slate-300 hover:text-white no-underline py-2 px-4"
-          href="/portal">PORTAL</a
-        >
-      </li>
-      <li class="mr-3">
-        <a
-          class="inline-block text-5xl lg:text-sm font-sans font-semibold text-slate-300 hover:text-white no-underline py-2 px-4"
-          href="/sitemap">SITEMAP</a
-        >
-      </li>
     </ul>
-    <div class="block relative p-4 lg:p-0">
+    <div class="flex relative p-4 lg:p-0 justify-center">
       <button
-        class="block lg:absolute w-48 p-2 right-8 bg-white text-md font-bold rounded-2xl"
-        ><a href="https://discord.gg/TQBJzfzt" class="w-full"
-          >Join Our Community</a
-        >
+        class="block lg:absolute w-auto p-2 right-8 bg-white text-md font-bold rounded-2xl"
+        ><a href="https://discord.gg/TQBJzfzt" class="w-full">CONTACT</a>
       </button>
     </div>
   </div>
