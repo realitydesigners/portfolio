@@ -28,30 +28,12 @@
    font-style: normal;
    font-display: swap;
 }
-body {
-   font-family: 'Atkinson', sans-serif;
-   margin: 0;
-   padding: 0;
-   text-align: left;
-   background: linear-gradient(var(--gray-gradient)) no-repeat;
-   background-size: 100% 600px;
-   word-wrap: break-word;
-   overflow-wrap: break-word;
-   color: rgb(var(--gray-dark));
-   font-size: 20px;
-   line-height: 1.7;
-}
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-   margin: 0 0 0.5rem 0;
-   color: rgb(var(--black));
-   line-height: 1.2;
-}
 h1 {
    font-size: 3.052em;
 }
@@ -103,10 +85,7 @@ code {
    background-color: rgb(var(--gray-light));
    border-radius: 2px;
 }
-pre {
-   padding: 1.5em;
-   border-radius: 8px;
-}
+
 pre > code {
    all: unset;
 }
@@ -119,14 +98,6 @@ blockquote {
 hr {
    border: none;
    border-top: 1px solid rgb(var(--gray-light));
-}
-@media (max-width: 720px) {
-   body {
-      font-size: 18px;
-   }
-   main {
-      padding: 1em;
-   }
 }
 
 .sr-only {
