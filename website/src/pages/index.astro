@@ -1,6 +1,10 @@
 ---
 import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
+
+import RealityDesigners from '../../public/images/Reality-Designers.png';
+import Rythm from '../../public/images/Rythm.png';
+
 import { Image } from 'astro:assets';
 ---
 
@@ -27,14 +31,14 @@ import { Image } from 'astro:assets';
             <!-- Project 1 -->
             <div class="project-box h-auto p-4 border-gray-600 border rounded-xl">
                <div class="w-full rounded-md border h-auto mb-2 overflow-hidden border-gray-600/25">
-                  <img src="/images/Reality Designers.png" alt="Reality Designers" class="object-cover w-full h-full" />
+                  <Image src="/images/Reality-Designers.png" width={500} height={500} alt="Reality Designers" class="object-cover w-full h-full" />
                </div>
                <span class="text-lg font-mono text-white">Reality Designers</span>
             </div>
             <!-- Project 2 -->
             <div class="project-box h-auto p-4 border-gray-600 border rounded-xl">
                <div class="w-full rounded-md border h-auto mb-2 overflow-hidden border-gray-600/25">
-                  <img src="/images/Rythm.png" alt="Rythm" class="object-cover w-full h-full" />
+                  <Image src="/images/Rythm.png" width={500} height={500} alt="Rythm" class="object-cover w-full h-full" />
                </div>
                <span class="text-lg font-mono text-white">Rythm Algorithmic Day Trading Strategies</span>
             </div>
