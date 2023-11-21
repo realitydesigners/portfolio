@@ -42,7 +42,7 @@ export default function Navbar() {
    };
 
    return (
-      <nav role="navigation" id="navbar" className="flex items-center justify-between z-80  bg-black fixed w-full z-50 h-auto">
+      <nav role="navigation" id="navbar" className="flex items-center justify-between z-80  bg-black/50 fixed w-full z-50 h-auto">
          <div className="ml-2 relative z-80 logo">
             <a href="/" className="flex-cols z-80 p-2 items-center flex">
                {getIcon('logo')}
