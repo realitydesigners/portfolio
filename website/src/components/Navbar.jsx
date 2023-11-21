@@ -8,6 +8,10 @@ export default function Navbar() {
       setIsNavOpen(!isNavOpen);
       document.body.style.overflow = isNavOpen ? 'auto' : 'hidden';
    };
+   const closeNav = () => {
+      setIsNavOpen(false);
+      document.body.style.overflow = 'auto';
+   };
 
    // Function to handle the SVG path change
    const getMenuIconPath = () => {
@@ -70,7 +74,7 @@ export default function Navbar() {
 
                <ul class="flex font-bold relative  p-2 gap-2 h-auto lg:h-auto flex-col  lg:justify-end uppercase text-black text-3xl lg:text-4xl">
                   <li>
-                     <a href="#projects" className="block flex items-center px-3 py-1 text-white hover:bg-gray-200/30 rounded-lg">
+                     <a href="#projects" onClick={closeNav} className="block flex items-center px-3 py-1 text-white hover:bg-gray-200/30 rounded-lg">
                         <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                            {getIcon('library')}
                         </svg>
