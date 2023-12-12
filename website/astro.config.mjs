@@ -5,7 +5,6 @@ import react from '@astrojs/react';
 
 import tailwind from '@astrojs/tailwind';
 
-// https://astro.build/config
 export default defineConfig({
    site: 'https://example.com',
    integrations: [mdx(), sitemap(), react(), tailwind()],
