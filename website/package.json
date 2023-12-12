@@ -16,12 +16,19 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
+    "@fontsource-variable/public-sans": "^5.0.17",
+    "@fontsource/staatliches": "^5.0.18",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "astro": "^3.5.5",
+    "lucide": "^0.294.0",
+    "lucide-react": "^0.294.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "tailwindcss": "^3.0.24",
     "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.4.1"
   }
 }

@@ -52,8 +52,8 @@ export default function Navbar() {
                {getIcon('logo')}
             </a>
          </div>
-         <a href="/" className="flex lg:flex text-white pt-2 pb-2 flex-col">
-            <span className="text-sm font-mono font-bold tracking-wide leading-none">raymondreamer</span>
+         <a href="/" className="flex lg:flex text-gray-200 pt-2 pb-2 flex-col">
+            <span className="text-sm normal font-bold tracking-wide leading-none">raymondreamer</span>
          </a>
 
          <div className="flex relative">
@@ -74,7 +74,7 @@ export default function Navbar() {
 
                <ul className="flex font-bold relative  p-2 gap-2 h-auto lg:h-auto flex-col  lg:justify-end uppercase text-black text-3xl lg:text-4xl">
                   <li>
-                     <a href="#projects" onClick={closeNav} className="block flex items-center px-3 py-1 text-white hover:bg-gray-200/30 rounded-lg">
+                     <a href="#projects" onClick={closeNav} className="block flex items-center px-3 py-1 text-gray-200 hover:bg-gray-200/30 rounded-lg">
                         <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                            {getIcon('library')}
                         </svg>
@@ -82,7 +82,7 @@ export default function Navbar() {
                      </a>
                   </li>
                   <li>
-                     <a href="/" className="block flex items-center px-3 py-1 text-white hover:bg-gray-200/30 rounded-lg">
+                     <a href="#about" onClick={closeNav} className="block flex items-center px-3 py-1 text-gray-200 hover:bg-gray-200/30 rounded-lg">
                         <svg className="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                            {getIcon('story')}
                         </svg>
