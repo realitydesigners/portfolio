@@ -1,20 +1,28 @@
-export const skills = [
-  "Next.js",
-  "Typescript",
-  "Nextjs 15",
-
-  "React 19",
-
-  "Astro",
-  "React",
-  "Tailwind",
-  "Three.js",
-  "React-Three-Fiber",
-  "Sanity CMS",
-  "Spline",
-  "3D Animation",
-  "Figma",
-];
+export const skills = {
+  Core: ["Next.js 15+", "React", "Astro", "TypeScript", "Tailwind"],
+  "3D & Graphics": [
+    "Three.js",
+    "React-Three-Fiber",
+    "Shaders",
+    "Blender",
+    "Spline",
+    "D3",
+  ],
+  Backend: [
+    "Headless CMS",
+    "Sanity.io",
+    "Prisma",
+    "Auth Systems",
+    "Server Components",
+  ],
+  Expertise: [
+    "3D Web Development",
+    "Interactive Scenes",
+    "Content Modeling",
+    "UI/UX Design",
+    "SEO Optimization",
+  ],
+} as const;
 
 export const socialLinks = [
   { name: "YouTube", url: "https://www.youtube.com/@realitydesigners" },
@@ -32,8 +40,8 @@ export const projects = [
     alt: "Reality Designers",
   },
   {
-    title: "Rythm Algorithmic Day Trading Strategies",
-    url: "https://rythm.capital",
+    title: "Rthmn",
+    url: "https://rthmn.com",
     image: "/images/Rythm.png",
     alt: "Rythm",
   },
