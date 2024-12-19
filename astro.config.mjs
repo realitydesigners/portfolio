@@ -3,9 +3,27 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 
-import tailwind from "@astrojs/tailwind";
-
 export default defineConfig({
   site: "https://raymondreamer.com",
-  integrations: [mdx(), sitemap(), react(), tailwind()],
+  integrations: [
+    mdx(),
+    sitemap(),
+    react({
+      include: ["**/*.{jsx,tsx}"],
+      experimentalReactChildren: true,
+      experimentalReact19: true,
+    }),
+  ],
+  vite: {
+    ssr: {
+      noExternal: ["react-dom"],
+    },
+    optimizeDeps: {
+      include: ["react", "react-dom"],
+      exclude: ["@astrojs/react"],
+    },
+    css: {
+      postcss: true,
+    },
+  },
 });
