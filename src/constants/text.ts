@@ -1,35 +1,74 @@
+import { FaYoutube, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
+import { BiLogoFigma } from "react-icons/bi";
+import { TbBrandNextjs, TbBrandThreejs } from "react-icons/tb";
+import {
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiAstro,
+  SiPrisma,
+  SiBlender,
+} from "react-icons/si";
+import { DiCss3 } from "react-icons/di";
+
 export const skills = {
-  Core: ["Next.js 15+", "React", "Astro", "TypeScript", "Tailwind"],
+  Core: [
+    { name: "Next.js 15+", icon: TbBrandNextjs },
+    { name: "React", icon: SiReact },
+    { name: "Astro", icon: SiAstro },
+    { name: "TypeScript", icon: SiTypescript },
+    { name: "Tailwind", icon: SiTailwindcss },
+  ],
   "3D & Graphics": [
-    "Three.js",
-    "React-Three-Fiber",
-    "Shaders",
-    "Blender",
-    "Spline",
-    "D3",
+    { name: "Three.js", icon: TbBrandThreejs },
+    { name: "React-Three-Fiber", icon: TbBrandThreejs },
+    { name: "Shaders", icon: DiCss3 },
+    { name: "Blender", icon: SiBlender },
+    { name: "Spline", icon: BiLogoFigma },
+    { name: "D3", icon: TbBrandThreejs },
   ],
   Backend: [
-    "Headless CMS",
-    "Sanity.io",
-    "Prisma",
-    "Auth Systems",
-    "Server Components",
+    { name: "Headless CMS", icon: TbBrandNextjs },
+    { name: "Sanity.io", icon: SiReact },
+    { name: "Prisma", icon: SiPrisma },
+    { name: "Auth Systems", icon: TbBrandNextjs },
+    { name: "Server Components", icon: SiReact },
   ],
   Expertise: [
-    "3D Web Development",
-    "Interactive Scenes",
-    "Content Modeling",
-    "UI/UX Design",
-    "SEO Optimization",
+    { name: "3D Web Development", icon: TbBrandThreejs },
+    { name: "Interactive Scenes", icon: TbBrandThreejs },
+    { name: "Content Modeling", icon: SiReact },
+    { name: "UI/UX Design", icon: BiLogoFigma },
+    { name: "SEO Optimization", icon: TbBrandNextjs },
   ],
 } as const;
 
 export const socialLinks = [
-  { name: "YouTube", url: "https://www.youtube.com/@realitydesigners" },
-  { name: "Twitter", url: "https://twitter.com/realitydesignrs" },
-  { name: "Instagram", url: "https://www.instagram.com/raymondreamer" },
-  { name: "Github", url: "https://github.com/realitydesigners" },
-  { name: "Portfolio", url: "https://app.spline.design/@realitydesigners" },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/@realitydesigners",
+    icon: FaYoutube,
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/realitydesignrs",
+    icon: FaTwitter,
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/raymondreamer",
+    icon: FaInstagram,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/realitydesigners",
+    icon: FaGithub,
+  },
+  {
+    name: "Portfolio",
+    url: "https://app.spline.design/@realitydesigners",
+    icon: BiLogoFigma,
+  },
 ];
 
 export const projects = [

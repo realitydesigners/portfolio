@@ -11,18 +11,19 @@ import { socialLinks, projects } from '../constants/text';
       <section class="min-h-screen flex items-center justify-center px-4">
          <div class="w-full md:w-3/4 lg:w-1/2 xl:w-2/5 2xl:w-1/3 p-8 flex flex-col bg-black/60 backdrop-blur-lg shadow-2xl rounded-2xl border border-gray-200/20 hover:border-gray-700 transition-all duration-500">
             <spline-viewer url="https://prod.spline.design/TmXL0dRWB4pSsfsm/scene.splinecode" class="w-full h-[275px] mb-6"></spline-viewer>
-            <h1 class="font-russo text-gray-100 text-center text-5xl lg:text-6xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+            <h1 class="font-russo text-gray-100 text-center text-3xl lg:text-6xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
                Raymondreamer
             </h1>
 
             <div class="w-full flex flex-col items-center justify-center space-y-3">
                {
-                  socialLinks.map(link => (
+                  socialLinks.map(({ name, url, icon: Icon }) => (
                      <a 
-                       href={link.url} 
-                       class="font-space uppercase text-center w-full md:w-2/3 lg:w-1/2 text-gray-200 bg-black/40 py-3 px-6 font-bold rounded-xl border border-gray-200/20 hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 ease-out"
+                       href={url} 
+                       class="font-space uppercase text-center w-full md:w-2/3 lg:w-1/2 text-gray-200 bg-black/40 py-3 px-6 font-bold rounded-xl border border-gray-200/20 hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 ease-out flex items-center justify-center gap-2"
                      >
-                        {link.name}
+                        <Icon className="w-5 h-5" />
+                        <span>{name}</span>
                      </a>
                   ))
                }
@@ -35,18 +36,24 @@ import { socialLinks, projects } from '../constants/text';
          <div class="w-5/6 lg:w-1/2 text-gray-200 leading-7">
             <div class="space-y-8 backdrop-blur-sm bg-black/60 p-8 rounded-2xl border border-gray-200/20 shadow-xl">
                <h2 class="text-3xl text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 font-semibold">
-                  I'm a Full-Stack JavaScript Developer & 3D Designer based between Silicon Valley and San Diego, crafting digital experiences that push boundaries.
+                  I'm a Creative Developer & Designer based between Silicon Valley and San Diego, crafting immersive digital experiences.
                </h2>
                
                <div class="space-y-6 text-lg">
-                  <p class="text-gray-300">For over 15 years, I've been at the intersection of technology and conscious design, exploring how we can shape digital reality through innovative development. My journey combines deep technical expertise with creative vision, allowing me to build immersive web experiences that bridge the gap between functionality and artistic expression.</p>
-
                   <p class="text-gray-300">
-                     My roots trace back to Minnesota, where I first discovered my entrepreneurial spirit. At 12, I combined my passion for skateboarding with self-taught coding skills to create and sell custom skateboards online. This early venture sparked my lifelong dedication to merging creativity with technical innovation.
+                     For over 15 years, I've been at the intersection of technology and creative design, specializing in high-fidelity prototyping, 3D design, and sophisticated content management systems. My work combines technical expertise with artistic vision, allowing me to build immersive web experiences that bridge the gap between functionality and innovation.
                   </p>
 
                   <p class="text-gray-300">
-                     In recent years, I've specialized in advanced web development and 3D design, creating immersive digital experiences using technologies like React-Three-Fiber and WebGL. I've pioneered headless CMS architectures for 3D model management and developed sophisticated content modeling systems. When I'm not coding or creating 3D art, you'll find me skateboarding along the San Diego coast, exploring thrift stores, or leading new initiatives at Reality Designers.
+                     Currently, I'm building Rthmn, a cutting-edge data visualization technology for trading markets that transforms complex financial data into intuitive, geometric patterns. Alongside this, I've created Reality Designers, an online community and blog focused on consciousness exploration and personal development, bringing together thousands of individuals interested in expanding their understanding of reality.
+                  </p>
+
+                  <p class="text-gray-300">
+                     My journey began in Minnesota, where I discovered my entrepreneurial spirit early on. At 12, I combined my passion for skateboarding with self-taught coding skills to create and sell custom skateboards online. This early venture sparked my lifelong dedication to merging creativity with technical innovation.
+                  </p>
+
+                  <p class="text-gray-300">
+                     Now working as a freelance software engineer, I've been involved in numerous projects ranging from 3D web applications to headless CMS architectures. I specialize in creating immersive digital experiences using technologies like React-Three-Fiber and WebGL, pioneering new approaches to web-based 3D content management and interactive design. When I'm not coding or creating 3D art, you'll find me skateboarding along the San Diego coast or exploring new ways to push the boundaries of digital creation.
                   </p>
                </div>
             </div>
