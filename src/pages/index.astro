@@ -1,18 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import '@fontsource/staatliches';
-import '@fontsource-variable/public-sans';
-
-const skills = ['Next.js', 'Typescript', 'Astro', 'React', 'Tailwind', 'Three.js', 'React-Three-Fiber', 'Sanity CMS', 'Spline', '3D Animation', 'Figma'];
-
-const socialLinks = [
-   { name: 'YouTube', url: 'https://www.youtube.com/@realitydesigners' },
-   { name: 'Twitter', url: 'https://twitter.com/realitydesignrs' },
-   { name: 'Instagram', url: 'https://www.instagram.com/raymondreamer' },
-   { name: 'Github', url: 'https://github.com/realitydesigners' },
-   { name: 'Portfolio', url: 'https://app.spline.design/@realitydesigners' },
-];
+import { skills, socialLinks, projects } from '../constants/text';
 ---
 
 <Layout title="raymondreamer">
@@ -22,15 +11,16 @@ const socialLinks = [
          <div class="relative z-10 h-screen min-h-screen">
             <spline-viewer url="https://prod.spline.design/MGue5aGRPW4o3O6K/scene.splinecode" class="w-full h-screen min-h-screen absolute top-0 opacity-50"></spline-viewer>
          </div>
+       
          <div class="w-full h-auto flex justify-center pt-20">
             <div class="w-5/6 md:w-3/4 lg:w-1/2 xl:w-2/5 2xl:w-1/3 h-full p-6 lg:p-8 flex flex-col bg-black/30 backdrop-blur-md shadow-lg rounded-lg border border-gray-600 mt-[-100vh] normal relative z-10">
                <spline-viewer url="https://prod.spline.design/TmXL0dRWB4pSsfsm/scene.splinecode" class="w-full h-[275px] mb-6"></spline-viewer>
-               <p class="text-gray-200 text-center text-5xl lg:text-6xl font-bold text-md mb-6 title">Hey - I'm Raymond, & I'm A Dreamer</p>
+               <p class="font-russo text-gray-200 text-center text-5xl lg:text-6xl font-bold text-md mb-6">Raymondreamer</p>
 
                <div class="w-full flex flex-col items-center justify-center space-y-2">
                   {
                      socialLinks.map(link => (
-                        <a href={link.url} class="uppercase text-center w-full md:w-2/3 lg:w-1/2 text-gray-200 hover:text-black bg-gray-200/20 py-3 px-6 font-bold rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out">
+                        <a href={link.url} class="font-space uppercase text-center w-full md:w-2/3 lg:w-1/2 text-gray-200 hover:text-black bg-gray-200/20 py-3 px-6 font-bold rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out">
                            {link.name}
                         </a>
                      ))
@@ -42,7 +32,7 @@ const socialLinks = [
       <!-- ABOUT -->
       <section id="about" class="bg-black w-full flex justify-center pt-20">
          <div class="w-5/6 lg:w-1/2 text-gray-200 leading-7">
-            <h2 class="text-gray-200 w-full text-center uppercase title text-7xl mb-8">Story</h2>
+
 
             <p class="text-2xl text-gray-300 font-semibold mb-4">I'm currently located in either Mountain View, CA or San Diego CA depending on the seasons.</p>
             <p class="mb-4 text-l tracking-wider text-gray-400">For over 15 years, I've been exploring and developing ideas about how we, as humans, can consciously design our reality. This journey intertwines my programming knowledge with insights gained from the self-development sphere.</p>
@@ -63,36 +53,26 @@ const socialLinks = [
 
       <section id="projects" class="bg-black w-full pt-10">
          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-            <!-- Project 1 -->
-            <div class="project-box h-auto p-4 border-gray-600 border rounded-xl">
+           {projects.map(project => (
+             <div class="project-box h-auto p-4 border-gray-600 border rounded-xl">
                <div class="w-full rounded-md h-auto mb-2 overflow-hidden">
-                  <a href="https://realitydesigners.tv" target="_blank">
-                     <Image src="/images/Reality-Designers.png" width={500} height={500} alt="Reality Designers" class="object-cover w-full h-full" />
-                  </a>
+                 <a href={project.url} target="_blank">
+                   <Image 
+                     src={project.image} 
+                     width={500} 
+                     height={500} 
+                     alt={project.alt} 
+                     class="object-cover w-full h-full" 
+                   />
+                 </a>
                </div>
-               <span class="text-lg normal text-gray-200">Reality Designers</span>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-box h-auto p-4 border-gray-600 border rounded-xl">
-               <div class="w-full rounded-md h-auto mb-2 overflow-hidden">
-                  <a href="https://rythm.capital" target="_blank">
-                     <Image src="/images/Rythm.png" width={500} height={500} alt="Rythm" class="object-cover w-full h-full" />
-                  </a>
-               </div>
-               <span class="text-lg normal text-gray-200">Rythm Algorithmic Day Trading Strategies</span>
-            </div>
-            <!-- Repeat for more projects -->
+               <span class="font-public-sans text-lg text-gray-200">{project.title}</span>
+             </div>
+           ))}
          </div>
-      </section>
+       </section>
    </main>
+
 </Layout>
 
-<style>
-   .title {
-      font-family: 'Staatliches', sans-serif;
-   }
 
-   .normal {
-      font-family: 'Public Sans Variable', sans-serif;
-   }
-</style>

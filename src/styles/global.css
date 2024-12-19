@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@import "@fontsource/staatliches";
+@import "@fontsource/bungee";
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bungee";
+  src: url("/node_modules/@fontsource/bungee/files/bungee-latin-400-normal.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Russo One";
+  src: url("/node_modules/@fontsource/russo-one/files/russo-one-latin-400-normal.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-russo {
+  font-family: "Russo One", sans-serif;
+}
+
+.font-bungee {
+  font-family: "Bungee", sans-serif;
+}
