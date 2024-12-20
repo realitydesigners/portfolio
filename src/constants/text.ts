@@ -77,7 +77,7 @@ export const projects = [
     description:
       "A community platform for consciousness exploration and personal development",
     url: "https://reality-designers.com",
-    image: "/images/Reality-Designers.png",
+    image: "/images/rd.png",
     alt: "Reality Designers Platform Screenshot",
     tags: ["Next.js", "React", "Three.js"],
   },
@@ -85,7 +85,7 @@ export const projects = [
     title: "Rthmn",
     description: "Advanced data visualization for trading markets",
     url: "https://rthmn.com",
-    image: "/images/Rythm.png",
+    image: "/images/rthmn.png",
     alt: "Rthmn Trading Platform Screenshot",
     tags: ["WebGL", "D3.js", "React"],
   },
