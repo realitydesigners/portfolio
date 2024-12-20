@@ -26,6 +26,7 @@
     "add": "^2.0.6",
     "astro": "^5.1.0",
     "bun": "^1.1.40",
+    "gradient-animation": "^1.0.17",
     "lucide": "^0.468.0",
     "lucide-react": "^0.468.0",
     "react": "^19.0.0",

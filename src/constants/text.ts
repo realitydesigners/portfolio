@@ -74,14 +74,19 @@ export const socialLinks = [
 export const projects = [
   {
     title: "Reality Designers",
+    description:
+      "A community platform for consciousness exploration and personal development",
     url: "https://reality-designers.com",
     image: "/images/Reality-Designers.png",
-    alt: "Reality Designers",
+    alt: "Reality Designers Platform Screenshot",
+    tags: ["Next.js", "React", "Three.js"],
   },
   {
     title: "Rthmn",
+    description: "Advanced data visualization for trading markets",
     url: "https://rthmn.com",
     image: "/images/Rythm.png",
-    alt: "Rythm",
+    alt: "Rthmn Trading Platform Screenshot",
+    tags: ["WebGL", "D3.js", "React"],
   },
 ];

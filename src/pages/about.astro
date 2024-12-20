@@ -1,31 +1,70 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About Me" description="Lorem ipsum dolor sit amet" pubDate={new Date('August 08 2021')} heroImage="/blog-placeholder-about.jpg">
-   <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames
-      ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-   </p>
+<Layout title="My Story - raymondreamer">
+   <main class="bg-black min-h-screen py-32">
+      <div class="max-w-3xl mx-auto px-4">
+         <div class="backdrop-blur-lg bg-black/60 p-12 rounded-2xl relative overflow-hidden shadow-2xl">
+            <div class="space-y-16">
+               <!-- Header -->
+               <div class="space-y-2 mb-12">
+                  <p class="text-gray-400 uppercase tracking-[0.2em] text-xs">My Story</p>
+                  <h1 class="font-russo text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+                     The Journey of a Creative Developer
+                  </h1>
+               </div>
 
-   <p>
-      Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui
-      ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
-   </p>
+               <!-- Story Content -->
+               <div class="space-y-12 text-lg">
+                  <div class="space-y-6">
+                     <h2 class="font-russo text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+                        Early Beginnings
+                     </h2>
+                     <p class="text-gray-300 leading-relaxed">
+                        My journey began in Minnesota, where I discovered my entrepreneurial spirit early on. At 12, I combined my passion for skateboarding with self-taught coding skills to create and sell custom skateboards online. This early venture sparked my lifelong dedication to merging creativity with technical innovation.
+                     </p>
+                  </div>
 
-   <p>
-      Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra
-      ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra
-      suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-   </p>
+                  <div class="space-y-6">
+                     <h2 class="font-russo text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+                        Professional Evolution
+                     </h2>
+                     <p class="text-gray-300 leading-relaxed">
+                        For over 15 years, I've been at the intersection of technology and creative design, specializing in high-fidelity prototyping, 3D design, and sophisticated content management systems. My work combines technical expertise with artistic vision, allowing me to build immersive web experiences that bridge the gap between functionality and innovation.
+                     </p>
+                  </div>
 
-   <p>
-      Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-      eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
-   </p>
+                  <div class="space-y-6">
+                     <h2 class="font-russo text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+                        Current Focus
+                     </h2>
+                     <p class="text-gray-300 leading-relaxed">
+                        Currently, I'm building Rthmn, a cutting-edge data visualization technology for trading markets that transforms complex financial data into intuitive, geometric patterns. Alongside this, I've created Reality Designers, an online community and blog focused on consciousness exploration and personal development, bringing together thousands of individuals interested in expanding their understanding of reality.
+                     </p>
+                  </div>
 
-   <p>
-      Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-      Egestas integer eget aliquet nibh praesent tristique magna.
-   </p>
+                  <div class="space-y-6">
+                     <h2 class="font-russo text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
+                        Beyond the Code
+                     </h2>
+                     <p class="text-gray-300 leading-relaxed">
+                        When I'm not coding or creating 3D art, you'll find me skateboarding along the San Diego coast or exploring new ways to push the boundaries of digital creation. Based between Silicon Valley and San Diego, I continue to seek out projects that challenge the status quo and create meaningful digital experiences.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Contact CTA -->
+               <div class="pt-12 border-t border-white/10">
+                  <a href="mailto:your@email.com" class="inline-flex items-center gap-2 text-white hover:text-white/80">
+                     <span class="font-light">Let's work together</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
 </Layout>
