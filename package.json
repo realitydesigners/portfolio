@@ -19,6 +19,7 @@
     "@fontsource/bungee": "^5.1.1",
     "@fontsource/russo-one": "^5.1.1",
     "@fontsource/staatliches": "^5.1.1",
+    "@splinetool/react-spline": "^4.0.0",
     "@tailwindcss/postcss": "^4.0.6",
     "@types/react": "^19.0.9",
     "@types/react-dom": "^19.0.3",

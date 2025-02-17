@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { skills } from '../constants/text';
 import { socialLinks, projects } from '../constants/text';
+import SplineScene from '../components/SplineScene';
 ---
 
 <Layout title="raymondreamer">
@@ -10,7 +11,9 @@ import { socialLinks, projects } from '../constants/text';
       <!-- HOME -->
       <section class="min-h-screen flex flex-col items-center justify-center px-4">
     
-         <spline-viewer url="https://prod.spline.design/TmXL0dRWB4pSsfsm/scene.splinecode" class="w-full h-[375px] lg:h-[500px] mb-6"></spline-viewer>
+         <div class="w-full h-[375px] lg:h-[500px] mb-6">
+          <SplineScene client:load />
+         </div>
          <h1 class="font-russo text-center text-3xl lg:text-6xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
             Raymondreamer
          </h1>
