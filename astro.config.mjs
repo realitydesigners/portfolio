@@ -17,6 +17,7 @@ export default defineConfig({
   vite: {
     ssr: {
       noExternal: ["react-dom"],
+      external: ["react-dom/server"],
     },
     optimizeDeps: {
       include: ["react", "react-dom"],
